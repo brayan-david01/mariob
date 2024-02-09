@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 13%, rgba(0,212,255,1) 56%);
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Mario;
+    src: url(/fonts/RetroMario-Regular.otf);
+}
+
+h1 {
+    font-family: Mario;
+    font-size: 5rem;
+}
+
+.amarillo {
+    color: yellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.verde {
+    color: greenyellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.azul {
+    color:cornflowerblue
+}
+
+.capa0 {
+    position: absolute;
+    left: -500px;
+    top: 0px;
+    z-index: 0;
+    
+}
+
+.capa1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    z-index: 1;
+     width: calc(50% - 150px);
+}
+
+.capa-2 {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    z-index: 2;
+        width: calc(50% - 150px);
+}
+
+.capa2 {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    z-index: 2;
+     width: calc(50% - 150px);
+}
+
+.capa3 {
+    position: absolute;
+    left: 600px;
+    top: 640px;
+    width: calc(50% - 150px);
+    z-index: 3;
+    animation: llega 5s infinite;
+    }
+
+    @keyframes llega {
+        0% {left: 100px; top: 280;}
+        0% {left: -2000px; top: 280;}
+}
